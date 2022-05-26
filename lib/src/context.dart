@@ -7,5 +7,6 @@ mixin SpiceContextMixin {
   ThemeData get theme => Theme.of(context);
   TextTheme get text => theme.textTheme;
   ColorScheme get colorScheme => theme.colorScheme;
+  MediaQueryData get media => MediaQuery.of(context);
 
 }
