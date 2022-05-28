@@ -12,6 +12,6 @@ mixin SpiceContextMixin {
   double get screenWidth => media.size.width;
   double get screenHeight => media.size.height;
 
-  BlocBase bloc<B extends BlocBase>() => BlocProvider.of<B>(context);
-  
+  B bloc<B extends BlocBase>() => BlocProvider.of<B>(context);
+
 }
