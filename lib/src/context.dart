@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 mixin SpiceContextMixin {
 
@@ -8,5 +9,9 @@ mixin SpiceContextMixin {
   TextTheme get text => theme.textTheme;
   ColorScheme get colorScheme => theme.colorScheme;
   MediaQueryData get media => MediaQuery.of(context);
+  double get screenWidth => media.size.width;
+  double get screenHeight => media.size.height;
 
+  BlocBase bloc<B extends BlocBase>() => BlocProvider.of<B>(context);
+  
 }
