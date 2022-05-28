@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:provider/provider.dart';
 import 'package:spice/src/context.dart';
-import 'package:spice/src/spicy_form.dart';
+import 'package:spice/src/form/spicy_form.dart';
 
 import 'form_cubit.dart';
 

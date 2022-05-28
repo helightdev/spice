@@ -1,4 +1,6 @@
 library spice;
 
-export 'src/spicy_form.dart';
-export 'src/spicy_widget.dart';
+export 'src/form/spicy_form.dart';
+export 'src/widgets/spicy_widget.dart';
+export 'src/widgets/savory_widget.dart';
+export 'src/bloc/bloc_widget.dart';

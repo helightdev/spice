@@ -4,10 +4,10 @@ import 'package:duffer/duffer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:provider/provider.dart';
-import 'form/form_cubit.dart';
+import 'form_cubit.dart';
 
-export 'form/form_cubit.dart';
-export 'form/form_widget.dart';
+export 'form_cubit.dart';
+export 'form_widget.dart';
 
 class SpicyForm extends StatefulWidget {
 

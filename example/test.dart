@@ -19,7 +19,7 @@ class ExampleWidget extends SpicyWidget {
   }
 
   @override
-  Widget build() {
+  Widget assemble() {
     return SizedBox(
       width: double.infinity,
       height: double.infinity,

@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:spice/src/spicy_form.dart';
+import 'package:spice/src/form/spicy_form.dart';
 
-import 'context.dart';
+import '../context.dart';
 
 abstract class SpicyWidget extends StatefulWidget with SpiceContextMixin {
 
@@ -11,8 +11,7 @@ abstract class SpicyWidget extends StatefulWidget with SpiceContextMixin {
 
   late SpicyWidgetState state;
 
-
-  Widget build();
+  Widget assemble();
 
   void enable() {}
   void disable() {}
@@ -58,7 +57,7 @@ class SpicyWidgetState extends State<SpicyWidget> {
   @override
   Widget build(BuildContext context) {
     widget.context = context;
-    return widget.build();
+    return widget.assemble();
   }
 }
 
